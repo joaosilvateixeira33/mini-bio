@@ -1,45 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 $title_font: "Poppins", sans-serif;
+$paragraph_font: "Inter", sans-serif;
+$info_size: 19px;
+$background_default: #F0F0F0;
+$color_default: #333;
+$color_title: #457B9D;
 
-.main_content{
-    padding-top: 2vh;
-    padding-left: 20vh;
-    width: 40vh;
-    height: 40%;
+body{
+    background-color: $background_default;
+    height: 100%;
 }
 
-.image_circle{
-    height: 30vh;
-    border-radius: 100%;
+main{
+    padding: 10vh 20vh 0;
 }
 
-.description{
-    width: 58vw;
-    text-align: justify;
-    font-size: 24px;
-}
-
-h1{
-    font-weight: 700;
-}
-
-h2{
-    font-weight: 600;
-}
-
-p{
-    font-weight: 400;
+img{
+    width: 15%;
+    border-radius: 60%;
 }
 
 h1, h2{
     font-family: $title_font;
+    color: $color_title;
 }
 
-.city{
-    font-size: 24px;
+p, li{
+    font-size: $info_size;
 }
 
-li{
-    font-size: 20px;
+p > a{
+
+}
+
+footer {
+    background-color: #A8DADC;
+    padding: 5px;
+    text-align: center;
+    width: 99.3vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: $paragraph_font;
+}
+
+footer > p{
+    text-align: center;
 }
